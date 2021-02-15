@@ -1,19 +1,19 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
 import * as Keycloak from 'keycloak-connect';
-import { KEYCLOAK_CONNECT_OPTIONS, KEYCLOAK_INSTANCE } from './constants';
-import { KeycloakConnectModuleAsyncOptions } from './interface/keycloak-connect-module-async-options.interface';
-import { KeycloakConnectOptionsFactory } from './interface/keycloak-connect-options-factory.interface';
+import { KEYCLOAK_CONNECT_OPTIONS, KEYCLOAK_INSTANCE } from '../constants';
+import { KeycloakConnectModuleAsyncOptions } from '../interface/keycloak-connect-module-async-options.interface';
+import { KeycloakConnectOptionsFactory } from '../interface/keycloak-connect-options-factory.interface';
 import { KeycloakController } from './keycloak.controller';
 import { KeycloakService } from './keycloak.service';
 
-export * from './decorators/allow-any-role.decorator';
-export * from './decorators/resource.decorator';
-export * from './decorators/roles.decorator';
-export * from './decorators/scopes.decorator';
-export * from './decorators/unprotected.decorator';
-export * from './decorators/enforcer-options.decorator';
-export * from './guards/resource.guard';
-export * from './guards/role.guard';
+export * from '../decorators/allow-any-role.decorator';
+export * from '../decorators/resource.decorator';
+export * from '../decorators/roles.decorator';
+export * from '../decorators/scopes.decorator';
+export * from '../decorators/unprotected.decorator';
+export * from '../decorators/enforcer-options.decorator';
+export * from '../guards/resource.guard';
+export * from '../guards/role.guard';
 
 declare interface KeycloakConnectOptions {
   /**

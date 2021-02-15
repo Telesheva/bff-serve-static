@@ -1,5 +1,5 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
-import {KeycloakService} from "../keycloak.service";
+import {KeycloakService} from "../keycloak/keycloak.service";
 import {IRequest} from "../interface/request.interface";
 
 @Injectable()
