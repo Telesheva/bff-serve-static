@@ -5,12 +5,12 @@ import {
   UnauthorizedException, ExecutionContext,
 } from "@nestjs/common";
 import requestPromise = require("request-promise");
-import { KeycloakConnectOptions } from "../interface/keycloak-connect-options.interface";
+import { KeycloakConnectOptions } from "../interfaces/keycloak-connect-options.interface";
 import { KEYCLOAK_CONNECT_OPTIONS, KEYCLOAK_INSTANCE } from "../constants";
 import { KeycloakedRequest } from "./keycloaked-request";
 import { REQUEST } from "@nestjs/core";
 import { Keycloak } from "keycloak-connect";
-import {IRequest} from "../interface/request.interface";
+import {IRequest} from "../interfaces/request.interface";
 
 @Injectable({ scope: Scope.REQUEST })
 export class KeycloakService {

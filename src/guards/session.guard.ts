@@ -1,6 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import {KeycloakService} from "../keycloak/keycloak.service";
-import {IRequest} from "../interface/request.interface";
+import {IRequest} from "../interfaces/request.interface";
 
 @Injectable()
 export class SessionGuard implements CanActivate {

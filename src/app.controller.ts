@@ -10,7 +10,7 @@ import {
 import { join } from "path";
 import { SessionGuard } from "./guards/session.guard";
 import { Response } from "express";
-import { IGetFilesRequestBody, IRequest } from "./interface/request.interface";
+import { IGetFilesRequestBody, IRequest } from "./interfaces/request.interface";
 
 @Controller()
 export class AppController {

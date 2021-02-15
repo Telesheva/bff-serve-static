@@ -1,8 +1,8 @@
 import { DynamicModule, Module, Provider } from '@nestjs/common';
 import * as Keycloak from 'keycloak-connect';
 import { KEYCLOAK_CONNECT_OPTIONS, KEYCLOAK_INSTANCE } from '../constants';
-import { KeycloakConnectModuleAsyncOptions } from '../interface/keycloak-connect-module-async-options.interface';
-import { KeycloakConnectOptionsFactory } from '../interface/keycloak-connect-options-factory.interface';
+import { KeycloakConnectModuleAsyncOptions } from '../interfaces/keycloak-connect-module-async-options.interface';
+import { KeycloakConnectOptionsFactory } from '../interfaces/keycloak-connect-options-factory.interface';
 import { KeycloakController } from './keycloak.controller';
 import { KeycloakService } from './keycloak.service';
 
